@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To Do App</title>
+</head>
+<body>
+    <main>
+        <div class="head">
+            <h1>Todo App</h1>
+            <div class="inputs">
+                <input type="text" id="add-todo" placeholder="Add todo...">
+                <input type="date" id="add-date">
+                <button id="add-button">Add</button>
+                <button id="edit-button">Edit</button>
+            </div>
+            <div class="sort-buttons">
+                <div>
+                     <button class="filter-todos" data-filter="all">All</button>
+                     <button class="filter-todos" data-filter="pending">Pending</button>
+                     <button class="filter-todos" data-filter="complited">Complited</button>
+                </div>
+                <button id="delete-button">Delete All</button>
+            </div>
+        </div>
+
+        <div id="alert-massage" ></div>
+
+        <div class="table">
+            <table class="todo-list">
+                <thead>
+                    <tr>
+                        <th>
+                            Task
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Status
+                        </th>
+                        <th>
+                            Actions
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
